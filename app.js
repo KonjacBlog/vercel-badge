@@ -13,7 +13,7 @@ app.get('/*', (req, res) => {
     if ("app" in query) {
         app = query["app"];
     } else {
-        res.status(302).redirect("https://github.com/therealsujitk/vercel-badge/blob/main/README.md");
+        res.status(302).redirect("https://github.com/KonjacBlog/vercel-badge/blob/main/README.md");
         return;
     }
 
@@ -74,7 +74,7 @@ app.get('/*', (req, res) => {
         });
     } catch {
         // An error was encountered for some unknown reason
-        res.status(500).send('Internal Server Error. Please open an issue at <a href="https://github.com/therealsujitk/vercel-badge/issues">vercel-badge/issues</a>.');
+        res.status(500).send('Internal Server Error. Please open an issue at <a href="https://github.com/KonjacBlog/vercel-badge/issues">vercel-badge/issues</a>.');
     }
 });
 
